@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oops — Page Not Found | StudyAI Tutor</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-void:#060811; --bg-surface:#0e1426; --electric:#3d8bff; --electric-bright:#7ec8ff;
+    --text-primary:#eef2fb; --text-muted:#8892ab; --border:rgba(126,155,255,0.16);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg-void); color:var(--text-primary); font-family:'Inter', sans-serif;
+    min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:24px;
+  }
+  .emoji{
+    font-size:5rem; display:inline-block;
+    animation:wobble 1.8s ease-in-out infinite;
+  }
+  @keyframes wobble{
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    25%      { transform: rotate(-8deg) translateY(-6px); }
+    50%      { transform: rotate(0deg) translateY(0); }
+    75%      { transform: rotate(8deg) translateY(-6px); }
+  }
+  h1{
+    font-family:'Space Grotesk', sans-serif; font-size:1.8rem; margin:20px 0 10px;
+  }
+  p{
+    color:var(--text-muted); font-size:1rem; max-width:420px; line-height:1.6; margin-bottom:28px;
+  }
+  a.btn{
+    background:var(--electric); color:#fff; text-decoration:none; font-weight:600;
+    padding:12px 28px; border-radius:999px; transition:background .2s ease;
+  }
+  a.btn:hover{ background:var(--electric-bright); }
+  @media (prefers-reduced-motion: reduce){
+    .emoji{ animation:none; }
+  }
+</style>
+</head>
+<body>
+  <span class="emoji" role="img" aria-label="Confused face">😵‍💫</span>
+  <h1>Oops — we can't reach that page.</h1>
+  <p>The page you're looking for might have been moved, renamed, or doesn't exist. Let's get you back to somewhere that works.</p>
+  <a class="btn" href="/">Back to StudyAI Tutor</a>
+</body>
+</html>

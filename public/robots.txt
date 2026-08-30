@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.studyaitutor.com/sitemap.xml
+Sitemap: https://studyai-tutor-v2.onrender.com/sitemap.xml

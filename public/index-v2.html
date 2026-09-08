@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="paper">
 <head>
-  <script src="https://pl31129620.profitableratecpmnetwork.com/b9/c0/f1/b9c0f17476c41eca6e24772e5954efad.js"></script>
-<script async="async" data-cfasync="false" src="https://pl31129621.profitableratecpmnetwork.com/24fbc70aa012de84c8ab7c0eda8653b1/invoke.js"></script>
-<div id="container-24fbc70aa012de84c8ab7c0eda8653b1"></div>
-https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee666d33e
-  <meta name="google-adsense-account" content="ca-pub-4578729154238476">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1E3A5F">
+<meta name="google-adsense-account" content="ca-pub-4578729154238476">
 <title>StudyAI Tutor — Learn With Eze</title>
 <meta name="description" content="A personal AI tutor for every subject — mathematics, sciences, languages including Igbo, Yoruba and Hausa, and more. Step-by-step explanations, homework help from a photo, and answers read aloud.">
 <meta name="robots" content="index, follow">
+
+<!-- PWA / Play Store packaging -->
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="StudyAI">
 
 <!-- Favicon / Google search result icon — Eze's crown mark -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -25,8 +28,8 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "StudyAI Tutor",
-  "url": "https://www.studyaitutor.com/",
-  "logo": "https://www.studyaitutor.com/favicon-512.png"
+  "url": "https://studyai-tutor-v2.onrender.com/",
+  "logo": "https://studyai-tutor-v2.onrender.com/favicon-512.png"
 }
 </script>
 
@@ -64,7 +67,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
   a{color:inherit;} button{font-family:inherit; cursor:pointer;}
   ::selection{background:var(--ochre); color:#fff;}
 
-  /* ---- Uli signature line motif ---- */
   .uli-line{fill:none; stroke:var(--indigo); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round;
     stroke-dasharray:1400; stroke-dashoffset:1400; animation:drawLine 2.6s ease forwards .3s;}
   .uli-line.accent{stroke:var(--ochre); stroke-width:1.6; animation-delay:.9s;}
@@ -236,18 +238,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
 </style>
 </head>
 <body>
-  <script src="https://pl31129623.profitableratecpmnetwork.com/fa/4a/b1/fa4ab10d3e86a6412344e3d294d918c9.js"></script>
-<script>
-  atOptions = {
-    'key' : '9ab9dd24b913ea02ddb07cd7f822224d',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highrevenueformat.com/9ab9dd24b913ea02ddb07cd7f822224d/invoke.js"></script>
-
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
@@ -431,7 +421,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
 
 <script>
 (function(){
-  // ---------- SUBJECTS ----------
   var SUBJECT_GROUPS = {
     "Mathematics": ["Arithmetic","Pre-Algebra","Algebra I","Algebra II","Geometry","Trigonometry","Pre-Calculus","Calculus","Statistics & Probability","Linear Algebra","Discrete Mathematics"],
     "Sciences": ["Physics","Chemistry","Biology","Earth Science","Environmental Science","Astronomy","Anatomy & Physiology"],
@@ -456,7 +445,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
   });
   subjectSelect.value = "Algebra I";
 
-  // ---------- THEME ----------
   var htmlEl = document.documentElement;
   var themeIcon = document.getElementById('themeIcon');
   var currentTheme = localStorage.getItem('studyai:theme') || 'paper';
@@ -473,7 +461,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
     localStorage.setItem('studyai:theme', currentTheme);
   });
 
-  // ---------- MODAL HELPERS ----------
   var overlays = {
     login: document.getElementById('loginOverlay'),
     signup: document.getElementById('signupOverlay'),
@@ -498,7 +485,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
     setTimeout(function(){ toast.classList.remove('show'); }, 2800);
   }
 
-  // ---------- API HELPER ----------
   async function api(path, options){
     options = options || {};
     var res = await fetch('/api' + path, Object.assign({
@@ -515,7 +501,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
     return data;
   }
 
-  // ---------- ACCOUNT STATE ----------
   var currentUser = null;
   var FREE_DAILY_LIMIT = 5;
 
@@ -610,7 +595,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
     var d = document.createElement('div'); d.textContent = str; return d.innerHTML;
   }
 
-  // ---------- SIGNUP / LOGIN ----------
   document.getElementById('signupForm').addEventListener('submit', async function(e){
     e.preventDefault();
     var errEl = document.getElementById('signupError'); errEl.classList.remove('show');
@@ -675,7 +659,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
     catch(e){ showToast('Could not save that preference.'); }
   });
 
-  // ---------- PREMIUM (Flutterwave Checkout) ----------
   var currentPricing = null;
   async function loadPricingIntoUpgradeButton(){
     try{
@@ -740,7 +723,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
     }
   })();
 
-  // ---------- TUTOR CHAT & EXTENSIONS ----------
   var chatBox = document.getElementById('chatBox');
   var questionInput = document.getElementById('question');
   var sendBtn = document.getElementById('sendBtn');
@@ -830,7 +812,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
     } catch(e){ /* not logged in or fetch failed — leave chat empty */ }
   }
 
-  // ---------- TEXT-TO-SPEECH ----------
   var PREFERRED_VOICE_NAMES = [
     'Google UK English Male', 'Microsoft Guy', 'Microsoft David', 'Daniel',
     'Alex', 'Fred', 'Google US English Male'
@@ -1012,7 +993,6 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
 
   questionInput.addEventListener('keydown', function(e){ if(e.key === 'Enter') askQuestion(); });
 
-  // ---------- INIT ----------
   (async function init(){
     refreshHeaderUI();
     try{
@@ -1021,6 +1001,9 @@ https://www.profitableratecpmnetwork.com/zf37upnk?key=176ef72df0e39bf08ce7d56ee6
       refreshHeaderUI();
       await renderStoredHistory(currentSubject);
     } catch(e){ /* not logged in */ }
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').catch(function(){});
+    }
   })();
 })();
 </script>

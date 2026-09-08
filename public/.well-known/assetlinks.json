@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.onrender.studyai_tutor_v2.twa",
+        "sha256_cert_fingerprints": ["F6:11:7D:33:42:26:EA:A9:EC:F0:88:4A:35:30:11:0A:E9:32:A8:26:D3:7A:26:73:80:F7:A1:1E:D6:10:02:DE"]
+      }
+    }]
